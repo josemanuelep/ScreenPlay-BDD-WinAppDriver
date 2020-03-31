@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Add to numbers" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-31T18:53:15" hostname="CHMEPPF0I6LTM" time="14.944">
+<testsuite name="Add to numbers" tests="3" skipped="0" failures="1" errors="0" timestamp="2020-03-31T20:14:17" hostname="CHMEPPF0I6LTM" time="41.999">
   <properties/>
-  <testcase name="Add two numbers" classname="Add to numbers" time="14.944"/>
+  <testcase name="Add two numbers" classname="Add to numbers" time="16.187"/>
+  <testcase name="Add two numbers" classname="Add to numbers" time="13.228">
+    <failure message="java.lang.AssertionError: Expected is add&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Expected is add
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.choucair.winappdriver.flightgui.stepdefinitions.AddSteps.heShouldSeeTheTotal(AddSteps.java:23)
+	at ✽.He should see the total 17(src/test/resources/features/add.feature:13)
+</failure>
+  </testcase>
+  <testcase name="Add two numbers" classname="Add to numbers" time="12.556"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[mar 31, 2020 1:53:20 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[mar 31, 2020 3:14:23 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -15,5 +27,33 @@ INFORMACIÓN: Detected dialect: OSS
 
 TEST PASSED: Add two numbers
 ----------------------------------------------------------------------------
+mar 31, 2020 3:14:36 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Add two numbers
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then is add
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected is addExpected: is <true> but: was <false>
+mar 31, 2020 3:14:50 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Add two numbers
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then is add
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected is addExpected: is <true> but: was <false>
 ]]></system-err>
 </testsuite>

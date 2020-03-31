@@ -2,9 +2,21 @@
 <testsuite name="co.com.choucair.winappdriver.flightgui.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="CHMEPPF0I6LTM" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-2 Steps (?[32m2 passed?[0m)
-0m15,412s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/add.feature:18 ?[0m# Add two numbers
+
+3 Scenarios (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+6 Steps (?[31m1 failed?[0m, ?[32m5 passed?[0m)
+0m42,656s
+
+java.lang.AssertionError: Expected is add
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.choucair.winappdriver.flightgui.stepdefinitions.AddSteps.heShouldSeeTheTotal(AddSteps.java:23)
+	at ?.He should see the total 17(src/test/resources/features/add.feature:13)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
