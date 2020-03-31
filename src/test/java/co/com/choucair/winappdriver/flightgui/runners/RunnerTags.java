@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/flight_gui.feature",
+        features = "src/test/resources/features/add.feature",
         glue = {"co.com.choucair.winappdriver.flightgui.stepdefinitions","co.com.choucair.winappdriver.flightgui.utils"},
         snippets = SnippetType.CAMELCASE
 )
