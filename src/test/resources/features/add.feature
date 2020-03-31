@@ -5,6 +5,7 @@
   Feature: Add to numbers
 
     As windows user I want to plus two numbers
+    in calculator of windows
 
     @tag1
     Scenario Outline: Add two numbers
