@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Subtract to numbers" skipped="0" tests="1" time="7.02" timestamp="2020-03-31 04:47:10"><testcase name="Subtract two numbers"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.choucair.winappdriver.flightgui.interactions.ClickOn.performAs(ClickOn.java:63)&#13;
+co.com.choucair.winappdriver.flightgui.tasks.Subtract.performAs(Subtract.java:26)&#13;
+co.com.choucair.winappdriver.flightgui.stepdefinitions.SubtractSteps.heSubtractMinus(SubtractSteps.java:16)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

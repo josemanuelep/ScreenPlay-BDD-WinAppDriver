@@ -7,6 +7,9 @@ public class CaculatorPage {
     private CaculatorPage() {
     }
     public static final Target BUTTON_ADD = Target.the("Button to add").located(By.xpath("//*[@AutomationId='plusButton']"));
+    public static final Target BUTTON_MINUS = Target.the("Button to add").located(By.xpath("//*[@AutomationId='minusButton']"));
+    public static final Target BUTTON_MULTIPLY = Target.the("Button to add").located(By.xpath("//*[@AutomationId='multiplyButton']"));
+    public static final Target BUTTON_DIVIDE= Target.the("Button to add").located(By.xpath("//*[@AutomationId='divideButton']"));
     public static final Target BUTTON_EQUAL = Target.the("Button to equal").located(By.xpath("//*[@AutomationId='equalButton']"));
     public static final Target CALCULATOR_RESULT = Target.the("Input result").located(By.xpath("//*[@AutomationId='CalculatorResults']"));
     public static final Target BUTTON_1 = Target.the("Input result").located(By.xpath("//*[@Name='Uno']"));

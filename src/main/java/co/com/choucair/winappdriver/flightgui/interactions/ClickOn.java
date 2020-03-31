@@ -17,7 +17,7 @@ public class ClickOn implements Interaction {
         return new ClickOn(num1);
     }
 
-    private Interaction clickNumber(Integer num) {
+    private Interaction switchNumber(Integer num) {
         switch (num) {
             case 1:
                 return Click.on(BUTTON_1);
@@ -39,6 +39,21 @@ public class ClickOn implements Interaction {
                 return Click.on(BUTTON_9);
             case 0:
                 return Click.on(BUTTON_0);
+        }
+        return null;
+    }
+
+    private Interaction clickNumber(Integer num) {
+        int numbersOfDigits = num.toString().length();
+        String numAsString = num.toString();
+
+        if (numbersOfDigits == 1) {
+            return switchNumber(num);
+        } else {
+            for (int i = 0; i < numbersOfDigits; i++) {
+                System.out.println("El numero a clicker es: "+numAsString.charAt(i));
+                return switchNumber((int) numAsString.charAt(i));
+            }
         }
         return null;
     }
