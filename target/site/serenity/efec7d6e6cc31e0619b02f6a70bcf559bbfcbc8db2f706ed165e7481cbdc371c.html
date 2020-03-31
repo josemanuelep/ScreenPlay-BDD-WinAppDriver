@@ -102,7 +102,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-03-2020 09:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-03-2020 13:53</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -150,9 +150,9 @@ in calculator of windows
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="success-color">
                                     Add two numbers
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -164,6 +164,47 @@ in calculator of windows
             </div>
 
 
+                <!-- CAST MEMBERS -->
+                <div>&nbsp;</div>
+                <div class="story-title">
+                    <table class="outcome-header">
+                        <tr>
+                            <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-users"></i>
+                                        <span class="story-header-title">
+                                            <a class="btn btn-primary" data-toggle="collapse" href="#castDetails"
+                                               role="button" aria-expanded="true" aria-controls="castDetails">Cast</a>
+                                        </span>
+                                    </h3>
+
+                                    <div class="cast-member collapse" id="castDetails">
+                                        <table class="cast">
+                                            <tr>
+                                                    <td width="100%">
+                                                        <h4>
+                                                            <i class="fa fa-2x fa-user-o"></i>&nbsp;<span>Jose</span>
+                                                            <h4>
+                                                                <p></p>
+                                                                <ul>
+                                                                        <li><strong>Jose can:</strong>
+                                                                            <ul>
+                                                                                    <li>browse the web</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                </ul>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END CAST MEMBERS -->
+
 
         </div>
     </div>
@@ -173,7 +214,7 @@ in calculator of windows
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Given He go to calculator app<br>When He plus &lt;adding_up_1&gt; and &lt;adding_up_2&gt;<br>Then He should see the total &lt;tot&gt;</div>
+            <div class="scenario">Given He plus &lt;adding_up_1&gt; and &lt;adding_up_2&gt;<br>Then He should see the total &lt;tot&gt;</div>
 
         </div>
 
@@ -198,39 +239,15 @@ in calculator of windows
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="test-PENDING"><a href="#0">1</a></td>
-                                <td class="test-PENDING"><a
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
                                             href="#0">4</a>
                                 </td>
-                                <td class="test-PENDING"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">5</a>
                                 </td>
-                                <td class="test-PENDING"><a
+                                <td class="test-SUCCESS"><a
                                             href="#0">9</a>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td class="test-PENDING"><a href="#1">2</a></td>
-                                <td class="test-PENDING"><a
-                                            href="#1">8</a>
-                                </td>
-                                <td class="test-PENDING"><a
-                                            href="#1">9</a>
-                                </td>
-                                <td class="test-PENDING"><a
-                                            href="#1">17</a>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td class="test-PENDING"><a href="#2">3</a></td>
-                                <td class="test-PENDING"><a
-                                            href="#2">7</a>
-                                </td>
-                                <td class="test-PENDING"><a
-                                            href="#2">5</a>
-                                </td>
-                                <td class="test-PENDING"><a
-                                            href="#2">12</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -244,22 +261,22 @@ in calculator of windows
                     <th width="65">                        &nbsp;
                     </th>
 
-                        <th width="%"
-                            class="step-description-wide-column greentext">
+                        <th width="%" class="step-description-column greentext">
                             Steps
                         </th>
+                        <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
                     <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-IGNORED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 ignored-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -275,54 +292,266 @@ in calculator of windows
                             </span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">IGNORED</span></td>
-                    <td width="100"><span class="top-level-step">1.44s</span></td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=0">
+                                    <img src="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         href="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=15">
+                                    <img src="e5cfc8a9fe0f071e75b6f3511eca9d16748840be8ed6bcf4eae2d10b3be67522.png"
+                                         href="e5cfc8a9fe0f071e75b6f3511eca9d16748840be8ed6bcf4eae2d10b3be67522.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">14.81s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
                         <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-0"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Given He plus 4 and 5
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=1">
+                                    <img src="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         href="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=12">
+                                    <img src="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         href="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">13.46s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0-0 success-icon"
+                                   style="margin-left: 60px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                Jose add
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=2">
+                                    <img src="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         href="237da365643bf7e8da64945aa22934bdb789eebb86ac61d8e01dd4d516f65d49.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=11">
+                                    <img src="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         href="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8.57s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-0"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                Given He go to calculator app
+                                Jose clicks on Input result
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0.04s</span></td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=3">
+                                    <img src="19c6aa7c92b510656ac051a6b5b542563c938c7029c793387c319aaa8c10a6cd.png"
+                                         href="19c6aa7c92b510656ac051a6b5b542563c938c7029c793387c319aaa8c10a6cd.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=4">
+                                    <img src="3da4df7f66a92d4f640ae16a2cefd5131ce97207bddb5b6faea38d63f319f7ee.png"
+                                         href="3da4df7f66a92d4f640ae16a2cefd5131ce97207bddb5b6faea38d63f319f7ee.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.21s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-1"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Jose clicks on Button to add
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=5">
+                                    <img src="21b11f103819bc679e8da04620971f0c56554fa657a896d0c929d93fb9839e78.png"
+                                         href="21b11f103819bc679e8da04620971f0c56554fa657a896d0c929d93fb9839e78.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=6">
+                                    <img src="76dbdc2631ae765fca2df99d87abfd402ff3fa8de56318110d0e03eb134d1011.png"
+                                         href="76dbdc2631ae765fca2df99d87abfd402ff3fa8de56318110d0e03eb134d1011.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.21s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-2"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Jose clicks on Input result
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=7">
+                                    <img src="76dbdc2631ae765fca2df99d87abfd402ff3fa8de56318110d0e03eb134d1011.png"
+                                         href="76dbdc2631ae765fca2df99d87abfd402ff3fa8de56318110d0e03eb134d1011.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=8">
+                                    <img src="62017250079d1d6b5ed7195efac625fe7731d751eda6bf88b1dcc68c9a4ccfbe.png"
+                                         href="62017250079d1d6b5ed7195efac625fe7731d751eda6bf88b1dcc68c9a4ccfbe.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.78s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0-3"/>
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Jose clicks on Button to equal
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=9">
+                                    <img src="62017250079d1d6b5ed7195efac625fe7731d751eda6bf88b1dcc68c9a4ccfbe.png"
+                                         href="62017250079d1d6b5ed7195efac625fe7731d751eda6bf88b1dcc68c9a4ccfbe.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=10">
+                                    <img src="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         href="5f41fab65ea550c98901b315b102c621fca7ae2f6566d047af8949ac1f6c143c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.78s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-1"/>
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                When He plus 4 and 5
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0.02s</span></td>
-                </tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="0-2"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -333,189 +562,26 @@ in calculator of windows
                             </span>
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="efec7d6e6cc31e0619b02f6a70bcf559bbfcbc8db2f706ed165e7481cbdc371c_screenshots.html#screenshots?screenshot=15">
+                                    <img src="e5cfc8a9fe0f071e75b6f3511eca9d16748840be8ed6bcf4eae2d10b3be67522.png"
+                                         href="e5cfc8a9fe0f071e75b6f3511eca9d16748840be8ed6bcf4eae2d10b3be67522.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.33s</span></td>
                 </tr>
 
                         </table>
                     </td>
                 <tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="1"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection1 ignored-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                               style="display:block;">
-                                <span class="top-level-step">
-                                Example: {adding_up_1=8, adding_up_2=9, tot=17}
-                            </span>
-                            </a>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">IGNORED</span></td>
-                    <td width="100"><span class="top-level-step">1.41s</span></td>
-                </tr>
-                <tr>
-                    <td colspan="5">
-                        <table id="stepSection1" style="display:none; width:100%">
-
-                <tr class="test-PENDING">
-                    <td width="50" class="step-icon">
-                        <a name="1-0"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                Given He go to calculator app
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="1-1"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                When He plus 8 and 9
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="1-2"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                Then He should see the total 17
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-
-                        </table>
-                    </td>
-                <tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="2"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection2 ignored-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block;">
-                                <span class="top-level-step">
-                                Example: {adding_up_1=7, adding_up_2=5, tot=12}
-                            </span>
-                            </a>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">IGNORED</span></td>
-                    <td width="100"><span class="top-level-step">1.03s</span></td>
-                </tr>
-                <tr>
-                    <td colspan="5">
-                        <table id="stepSection2" style="display:none; width:100%">
-
-                <tr class="test-PENDING">
-                    <td width="50" class="step-icon">
-                        <a name="2-0"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                Given He go to calculator app
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0.03s</span></td>
-                </tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="2-1"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                When He plus 7 and 5
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-IGNORED">
-                    <td width="50" class="step-icon">
-                        <a name="2-2"/>
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                Then He should see the total 12
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-
-                        </table>
-                    </td>
-                <tr>
-                <tr class="test-PENDING">
-                        <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>4.28s</em></span></td>
+                <tr class="test-SUCCESS">
+                        <td colspan="3"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>15.09s</em></span></td>
                 </tr>
 
             </table>
