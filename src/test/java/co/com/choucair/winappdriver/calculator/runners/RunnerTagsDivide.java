@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/subtract.feature",
-        glue = {"co.com.choucair.winappdriver.flightgui.stepdefinitions","co.com.choucair.winappdriver.flightgui.utils"},
+        features = "src/test/resources/features/divide.feature",
+        glue = {"co.com.choucair.winappdriver.calculator.stepdefinitions","co.com.choucair.winappdriver.calculator.utils"},
         snippets = SnippetType.CAMELCASE
 )
-public class RunnerTagsSubstract {
+public class RunnerTagsDivide {
 }
