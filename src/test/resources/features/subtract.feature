@@ -14,6 +14,6 @@
 
       Examples:
         | minuend | subtrahend | difference |
-        | 12      | 12         | 0          |
-#        | 15      | 10         | 5          |
-#        | 7       | 5          | 2          |
+        | 10      | 10         | 0          |
+        | 15      | 10         | 5          |
+        | 7       | 5          | 2          |

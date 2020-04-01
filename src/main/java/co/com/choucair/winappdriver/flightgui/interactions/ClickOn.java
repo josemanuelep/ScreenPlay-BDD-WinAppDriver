@@ -43,25 +43,24 @@ public class ClickOn implements Interaction {
         return null;
     }
 
-    private Interaction clickNumber(Integer num) {
-        int numbersOfDigits = num.toString().length();
-        String numAsString = num.toString();
-
-        if (numbersOfDigits == 1) {
-            return switchNumber(num);
-        } else {
-            for (int i = 0; i < numbersOfDigits; i++) {
-                System.out.println("El numero a clicker es: "+numAsString.charAt(i));
-                return switchNumber((int) numAsString.charAt(i));
-            }
-        }
-        return null;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-                clickNumber(this.num1)
-        );
+        int numbersOfDigits = this.num1.toString().length();
+        String numAsString = this.num1.toString();
+        if (numbersOfDigits==1){
+            actor.attemptsTo(
+                   switchNumber(this.num1)
+            );
+        }else{
+            for (int i = 0; i < numbersOfDigits; i++) {
+                int digit = Character.getNumericValue(numAsString.charAt(i));
+                actor.attemptsTo(
+                        switchNumber(digit)
+
+                );
+            }
+        }
+
     }
 }
