@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/multiply.feature",
+        features = "src/test/resources/standart_calculator/multiply.feature",
         glue = {"co.com.choucair.winappdriver.calculator.stepdefinitions","co.com.choucair.winappdriver.calculator.utils"},
         snippets = SnippetType.CAMELCASE
 )

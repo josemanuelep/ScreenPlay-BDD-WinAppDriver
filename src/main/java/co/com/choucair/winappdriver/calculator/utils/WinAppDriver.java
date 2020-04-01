@@ -30,6 +30,7 @@ public class WinAppDriver {
             killProcess(EXECUTABLE);
         }
 
+
         try {
             Properties properties = new Properties();
             File fileDir = new File(System.getProperty("user.dir"));

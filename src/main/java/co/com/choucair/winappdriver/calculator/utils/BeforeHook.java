@@ -8,7 +8,7 @@ public class BeforeHook {
     @Before
     public void prepareStage() {
         WinAppDriver.open();
+        AppSesion.setup();
         OnStage.setTheStage(new OnlineCast());
-
     }
 }
