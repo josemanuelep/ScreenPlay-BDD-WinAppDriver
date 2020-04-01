@@ -1,4 +1,4 @@
-package co.com.choucair.winappdriver.flightgui.runners;
+package co.com.choucair.winappdriver.calculator.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;

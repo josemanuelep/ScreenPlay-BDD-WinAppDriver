@@ -1,4 +1,4 @@
-package co.com.choucair.winappdriver.flightgui.utils;
+package co.com.choucair.winappdriver.calculator.utils;
 
 import java.awt.*;
 import java.io.BufferedReader;

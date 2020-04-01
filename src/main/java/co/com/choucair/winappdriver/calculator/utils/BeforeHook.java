@@ -1,4 +1,4 @@
-package co.com.choucair.winappdriver.flightgui.utils;
+package co.com.choucair.winappdriver.calculator.utils;
 
 import cucumber.api.java.Before;
 import net.serenitybdd.screenplay.actors.OnStage;

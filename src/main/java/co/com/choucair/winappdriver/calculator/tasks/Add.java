@@ -1,13 +1,13 @@
-package co.com.choucair.winappdriver.flightgui.tasks;
+package co.com.choucair.winappdriver.calculator.tasks;
 
-import co.com.choucair.winappdriver.flightgui.interactions.ClickOn;
+import co.com.choucair.winappdriver.calculator.interactions.ClickOn;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.choucair.winappdriver.flightgui.userinterfaces.CaculatorPage.BUTTON_ADD;
-import static co.com.choucair.winappdriver.flightgui.userinterfaces.CaculatorPage.BUTTON_EQUAL;
+import static co.com.choucair.winappdriver.calculator.userinterfaces.CaculatorPage.BUTTON_ADD;
+import static co.com.choucair.winappdriver.calculator.userinterfaces.CaculatorPage.BUTTON_EQUAL;
 
 public class Add implements Task {
     private Integer num1;

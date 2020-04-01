@@ -2,6 +2,8 @@ package co.com.choucair.winappdriver.calculator.stepdefinitions;
 
 import co.com.choucair.winappdriver.calculator.questions.IsOperation;
 import co.com.choucair.winappdriver.calculator.tasks.Add;
+import co.com.choucair.winappdriver.calculator.tasks.Multiply;
+import co.com.choucair.winappdriver.calculator.tasks.Subtract;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.actors.OnStage;
@@ -9,16 +11,10 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class AddSteps {
-
-    @Given("^He plus (\\d+) and (\\d+)$")
-    public void hePlusAnd(int arg1, int arg2) {
-        OnStage.theActorCalled("Jose").wasAbleTo(Add.numbers(arg1,arg2));
-
-    }
-
-    @Then("^He should see the total (\\d+)$")
-    public void heShouldSeeTheTotal(int arg1) {
-        theActorInTheSpotlight().should(seeThat(IsOperation.correct(arg1)));
+public class MultiplySteps {
+    private String actor ="Jose";
+    @Given("^He multiply (\\d+) and (\\d+)$")
+    public void heMultiplyAnd(int arg1, int arg2) {
+        OnStage.theActorCalled(actor).wasAbleTo(Multiply.numbers(arg1,arg2));
     }
 }

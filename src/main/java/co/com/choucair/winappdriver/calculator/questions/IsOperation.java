@@ -1,10 +1,10 @@
-package co.com.choucair.winappdriver.flightgui.questions;
+package co.com.choucair.winappdriver.calculator.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
-import static co.com.choucair.winappdriver.flightgui.userinterfaces.CaculatorPage.CALCULATOR_RESULT;
+import static co.com.choucair.winappdriver.calculator.userinterfaces.CaculatorPage.CALCULATOR_RESULT;
 
 public class IsOperation implements Question<Boolean> {
     private Integer result;

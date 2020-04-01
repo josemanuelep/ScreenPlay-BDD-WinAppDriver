@@ -1,4 +1,4 @@
-package co.com.choucair.winappdriver.flightgui.userinterfaces;
+package co.com.choucair.winappdriver.calculator.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;

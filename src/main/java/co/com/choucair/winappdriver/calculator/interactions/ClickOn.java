@@ -1,10 +1,10 @@
-package co.com.choucair.winappdriver.flightgui.interactions;
+package co.com.choucair.winappdriver.calculator.interactions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.choucair.winappdriver.flightgui.userinterfaces.CaculatorPage.*;
+import static co.com.choucair.winappdriver.calculator.userinterfaces.CaculatorPage.*;
 
 public class ClickOn implements Interaction {
     private Integer num1;

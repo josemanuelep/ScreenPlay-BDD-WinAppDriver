@@ -10,10 +10,10 @@
     @tag1
     Scenario Outline: Subtract two numbers
       Given He subtract <minuend> minus <subtrahend>
-      Then He should see the total <difference>
+      Then He should see the total <tot>
 
       Examples:
-        | minuend | subtrahend | difference |
-        | 10      | 10         | 0          |
-        | 15      | 10         | 5          |
-        | 7       | 5          | 2          |
+        | minuend | subtrahend | tot |
+        | 10      | 10         | 0   |
+#        | 15      | 10         | 5   |
+#        | 7       | 5          | 2   |

@@ -2,18 +2,18 @@
   # Jose Manuel Echeverri Palacio
   # Java and Test developer
   @Regresion
-  Feature: Subtract to numbers
+  Feature: Divide to numbers
 
-    As windows user I want to subtract two numbers
+    As windows user I want to divide two numbers
     in calculator of windows
 
     @tag1
-    Scenario Outline: Subtract two numbers
-      Given He subtract <minuend> minus <subtrahend>
-      Then He should see the total <difference>
+    Scenario Outline: Divide two numbers
+      Given He divide <dividend> divided <divisor>
+      Then He should see the total <tot>
 
       Examples:
-        | minuend | subtrahend | difference |
-        | 10      | 10         | 0          |
-        | 15      | 10         | 5          |
-        | 7       | 5          | 2          |
+        | dividend | divisor | tot |
+        | 9        | 3       | 3   |
+#        | 12       | 6       | 2   |
+#        | 20       | 4       | 5   |
