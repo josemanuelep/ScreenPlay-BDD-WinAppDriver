@@ -1,11 +1,17 @@
 package co.com.choucair.winappdriver.calculator.utils;
 
+import io.appium.java_client.windows.WindowsDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 /**
  * <h1>Open WinAppDriver</h1>
@@ -21,11 +27,24 @@ public class WinAppDriver {
     private static final String KILL = "taskkill /F /IM ";
     private static final String TASK_LIST = "tasklist";
     private static final String EXECUTABLE = "WinAppDriver";
+    private static WindowsDriver DriverSession = null;
+    DesiredCapabilities capabilities = new DesiredCapabilities();
 
     private WinAppDriver() {
     }
-
+    public static WindowsDriver getDriverSession(){
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+        try {
+            DriverSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
+            DriverSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return DriverSession;
+    }
     public static void open() {
+
         if (isProcessRunning(EXECUTABLE)) {
             killProcess(EXECUTABLE);
         }

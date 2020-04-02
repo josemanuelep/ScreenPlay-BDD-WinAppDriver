@@ -1,13 +1,15 @@
 package co.com.choucair.winappdriver.calculator.stepdefinitions;
 
+import co.com.choucair.winappdriver.calculator.questions.IsOperation;
 import co.com.choucair.winappdriver.calculator.tasks.ConvertCurrency;
 import co.com.choucair.winappdriver.calculator.tasks.OpenCalculator;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.actors.OnStage;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class CurrencyConverterSteps {
     private String actor = "Jose";
@@ -17,9 +19,10 @@ public class CurrencyConverterSteps {
         theActorCalled(actor).wasAbleTo(OpenCalculator.currencyConverter());
     }
 
-    @Given("^He set currency Estados Unidos Dolar and Nueva Zelanda Dolar$")
-    public void heSetCurrencyEstadosUnidosDolarAndNuevaZelandaDolar() {
-//        theActorCalled(actor).wasAbleTo(ConvertCurrency.);
+
+    @Given("^He set currency \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void heSetCurrencyAnd(String arg1, String arg2) {
+        theActorCalled(actor).wasAbleTo(OpenCalculator.currencyConverter());
     }
 
     @When("^He input (\\d+)$")
@@ -29,7 +32,7 @@ public class CurrencyConverterSteps {
 
     @Then("^He should see the convert curency (\\d+)$")
     public void heShouldSeeTheConvertCurency(int arg1) {
-
+//        theActorInTheSpotlight().should(seeThat());
     }
 
 }

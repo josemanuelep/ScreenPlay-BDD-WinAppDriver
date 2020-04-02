@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
 
-group 'co.com.choucair.winappdriver.flightgui'
+group 'co.com.choucair.winappdriver.calculator'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
