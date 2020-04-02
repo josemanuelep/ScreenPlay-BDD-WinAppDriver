@@ -1,5 +1,6 @@
 package co.com.choucair.winappdriver.calculator.stepdefinitions;
 
+import co.com.choucair.winappdriver.calculator.interactions.SelectCurrency;
 import co.com.choucair.winappdriver.calculator.questions.IsOperation;
 import co.com.choucair.winappdriver.calculator.tasks.ConvertCurrency;
 import co.com.choucair.winappdriver.calculator.tasks.OpenCalculator;
@@ -22,7 +23,7 @@ public class CurrencyConverterSteps {
 
     @Given("^He set currency \"([^\"]*)\" and \"([^\"]*)\"$")
     public void heSetCurrencyAnd(String arg1, String arg2) {
-        theActorCalled(actor).wasAbleTo(OpenCalculator.currencyConverter());
+        theActorCalled(actor).wasAbleTo(SelectCurrency.of(arg1,arg2));
     }
 
     @When("^He input (\\d+)$")

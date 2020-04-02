@@ -17,5 +17,6 @@
       Then He should see the convert curency <mount_out>
 
       Examples:
-        | units_in | units_out | mount_in | mount_out |
-        | "fg"     | "dgg"     | 100      | 169       |
+        | units_in               | units_out             | mount_in | mount_out |
+        | "Estados Unidos Dólar" | "Nueva Zelanda Dólar" | 100      | 169       |
+        | "Afganistán Afgani"    | "Costa Rica Colón"    | 100      | 754       |
