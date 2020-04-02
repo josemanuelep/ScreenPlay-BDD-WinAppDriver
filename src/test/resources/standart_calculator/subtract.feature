@@ -7,6 +7,10 @@
     As windows user I want to subtract two numbers
     in calculator of windows
 
+    Background: Go to standart calculator
+      Given Jose goes to standart calculator
+
+
     @tag1
     Scenario Outline: Subtract two numbers
       Given He subtract <minuend> minus <subtrahend>

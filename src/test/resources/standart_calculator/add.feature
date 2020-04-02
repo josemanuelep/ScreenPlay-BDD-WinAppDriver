@@ -7,6 +7,9 @@
     As windows user I want to plus two numbers
     in calculator of windows
 
+    Background: Go to standart calculator
+      Given Jose goes to standart calculator
+
     @tag1
     Scenario Outline: Add two numbers
       Given He plus <adding_up_1> and <adding_up_2>

@@ -7,6 +7,9 @@
     As windows user I want to divide two numbers
     in calculator of windows
 
+    Background: Go to standart calculator
+      Given Jose goes to standart calculator
+
     @tag1
     Scenario Outline: Divide two numbers
       Given He divide <dividend> divided <divisor>

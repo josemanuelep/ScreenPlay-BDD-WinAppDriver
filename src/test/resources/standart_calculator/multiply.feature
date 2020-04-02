@@ -7,6 +7,10 @@
     As windows user I want to multiply two numbers
     in calculator of windows
 
+    Background: Go to standart calculator
+      Given Jose goes to standart calculator
+
+
     @tag1
     Scenario Outline: Multiply two numbers
       Given He multiply <adding_up_1> and <adding_up_2>
