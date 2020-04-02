@@ -11,12 +11,11 @@
       Given Jose goes to currency calculator
 
     @tag1
-    Scenario Outline: Add two numbers
-      Given He plus <adding_up_1> and <adding_up_2>
-      Then He should see the total <tot>
+    Scenario Outline: Convert currency
+      Given He set currency <units_in> and <units_out>
+      When He input <mount_in>
+      Then He should see the convert curency <mount_out>
 
       Examples:
-        | adding_up_1 | adding_up_2 | tot |
-        | 4           | 5           | 9   |
-#        | 8           | 9           | 17  |
-#        | 7           | 5           | 12  |
+        | units_in             | units_out           | mount_in | mount_out |
+        | Estados Unidos Dolar | Nueva Zelanda Dolar | 100      | 169       |

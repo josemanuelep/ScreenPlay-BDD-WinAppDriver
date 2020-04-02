@@ -11,5 +11,6 @@ public class CurrencyConverterPage {
     public static final Target BUTTON_INPUT_CURRENCY = Target.the("Selected to change input currency").located(By.xpath("//*[@AutomationId='Units1']"));
     public static final Target BUTTON_OUTPUT_CURRENCY = Target.the("Selected to change output currency").located(By.xpath("//*[@AutomationId='Units2']"));
     public static final Target RESULT_OF_CONVERSION = Target.the("Result of conversion").located(By.xpath("//*[@AutomationId='Value2']"));
+    public static final Target INPUT_OF_CONVERSION = Target.the("Input of conversion").located(By.xpath("//*[@AutomationId='Value1']"));
 
 }
