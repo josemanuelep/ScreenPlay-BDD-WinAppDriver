@@ -8,6 +8,7 @@ public class CalculatorLeftBar {
 
     public static final Target BUTTON_TOGGLE_LEFT_PANE = Target.the("Button to all funtions in calculator").located(By.xpath("//*[@AutomationId='TogglePaneButton']"));
     public static final Target BUTTON_STANDART_CALCULATOR = Target.the("Button to standart calculator").located(By.xpath("//*[@AutomationId='Standard']"));
+    public static final Target BUTTON_CURRENCY_CALCULATOR = Target.the("Button to Currency calculator").located(By.xpath("//*[@AutomationId='Currency']"));
 
 }
 
