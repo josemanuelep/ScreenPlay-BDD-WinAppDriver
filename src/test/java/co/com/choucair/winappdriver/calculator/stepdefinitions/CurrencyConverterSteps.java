@@ -1,6 +1,7 @@
 package co.com.choucair.winappdriver.calculator.stepdefinitions;
 
 import co.com.choucair.winappdriver.calculator.interactions.SelectCurrency;
+import co.com.choucair.winappdriver.calculator.questions.IsCurrency;
 import co.com.choucair.winappdriver.calculator.questions.IsOperation;
 import co.com.choucair.winappdriver.calculator.tasks.ConvertCurrency;
 import co.com.choucair.winappdriver.calculator.tasks.OpenCalculator;
@@ -32,8 +33,8 @@ public class CurrencyConverterSteps {
     }
 
     @Then("^He should see the convert curency (\\d+)$")
-    public void heShouldSeeTheConvertCurency(int arg1) {
-//        theActorInTheSpotlight().should(seeThat());
+    public void heShouldSeeTheConvertCurency(Double arg1) {
+        theActorInTheSpotlight().should(seeThat(IsCurrency.correct(arg1)));
     }
 
 }
