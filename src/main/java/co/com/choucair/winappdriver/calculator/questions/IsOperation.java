@@ -19,7 +19,8 @@ public class IsOperation implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        String toValidate = Text.of(CALCULATOR_RESULT).viewedBy(actor).asString().replaceAll("\\D+","");;
+        String toValidate = Text.of(CALCULATOR_RESULT).viewedBy(actor).asString().replaceAll("\\D+", "");
+        ;
         return this.result.equals(Integer.valueOf(toValidate));
     }
 }

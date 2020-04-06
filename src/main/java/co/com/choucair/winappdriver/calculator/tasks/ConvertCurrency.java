@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.com.choucair.winappdriver.calculator.userinterfaces.CurrencyConverterPage.COMBOBOX_INPUT_CURRENCY;
 import static co.com.choucair.winappdriver.calculator.userinterfaces.CurrencyConverterPage.INPUT_OF_CONVERSION;
 
 public class ConvertCurrency implements Task {

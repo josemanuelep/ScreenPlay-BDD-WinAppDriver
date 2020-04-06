@@ -22,6 +22,7 @@ public class IsCurrency implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         String toValidate = Text.of(RESULT_OF_CONVERSION).viewedBy(actor).asString().replaceAll("\\D+", "");
         System.out.println("Result " + toValidate);
+        System.out.println("Feature value " + this.result);
         return this.result.equals(Integer.valueOf(toValidate));
     }
 }

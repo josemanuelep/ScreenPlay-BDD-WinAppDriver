@@ -35,8 +35,8 @@ public class OpenCalculator implements Task {
                 actor.attemptsTo(
                         Click.on(BUTTON_TOGGLE_LEFT_PANE),
                         Click.on(BUTTON_CURRENCY_CALCULATOR),
-                        Click.on(BUTTON_CLEAR),
-                        Click.on(BUTTON_REFRESH_RATES)
+                        Click.on(BUTTON_CLEAR)
+//                        Click.on(BUTTON_REFRESH_RATES)
                 );
         }
     }
